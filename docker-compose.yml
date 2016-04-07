@@ -1,0 +1,9 @@
+web:
+  build: app/.
+  command: npm start
+  ports:
+    - '5555:5555'
+haproxy:
+  build: haproxy/.
+  ports:
+    - '12345:12345'
